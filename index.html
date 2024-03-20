@@ -57,6 +57,27 @@
                         <input type="number" name="mileage" id="mileage" class="block"
                             placeholder="Digite a kilometragem do veículo" required />
                     </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Data de compra <span class="required-field">*</span></label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" required />
+                    </div>
+                    <div class="box-input">
+                        <p>Tipo de câmbio: <span class="required-field">*</span></p>
+                        <input type="radio" id="manual" name="gear" />
+                        <label for="manual">Manual</label>
+                        <input type="radio" id="auto" name="gear" />
+                        <label for="auto">Automático</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="airbag" name="optional[]" value="airbag" />
+                                <label for="airbag">Airbag</label>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </form>
             </div>
         </div>
